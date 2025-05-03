@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Vagas de emprego</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="top-nav">
+        {% if session.get('user') %}
+            <span>Olá, {{ session['user'] }}</span>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Registrar</a>
+        {% endif %}
+    </div>
+    <div class="container">
+              <div style="text-align: right;">
+                {% if user %}
+                  <span>Olá, {{ user }} | <a href="{{ url_for('logout') }}">Logout</a></span>
+                {% else %}
+                  <a href="{{ url_for('login') }}">Login</a> | <a href="{{ url_for('register') }}">Registrar</a>
+                {% endif %}
+              </div>
+          
+              <h1>Vagas de empregos</h1>
+
+        <!-- Filtro de vagas -->
+        <form method="GET">
+            <input type="text" name="busca" placeholder="Buscar vaga..." value="{{ busca }}">
+            <select name="area">
+                <option value="">Todas as áreas</option>
+                <!-- adicionar opções dinamicamente -->
+            </select>
+            <button type="submit">Filtrar</button>
+        </form>
+
+        <!-- Lista de vagas -->
+        <div id="lista-vagas">
+            {% for vaga in vagas %}
+                <div class="vaga">
+                    <h2>{{ vaga.título }}</h2>
+                    <p><strong>{{ vaga.empresa }}</strong> - {{ vaga.local }}</p>
+                    <p>Área: {{ vaga.area }}</p>
+                    <a href="#">Ver vaga</a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <hr>
+
+       
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

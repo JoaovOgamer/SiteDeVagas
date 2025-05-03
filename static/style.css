@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width: 180px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5b57e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4845c3;
+}
+
+.vaga {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(91, 87, 230, 0.2);
+    border-left: 5px solid #5b57e6;
+}
+
+.vaga h2 {
+    margin: 0 0 0.5rem;
+}
+
+.vaga a {
+    color: #5b57e6;
+    text-decoration: none;
+}
+
+.vaga a:hover {
+    text-decoration: underline;
+}
+
+/* Login/Register buttons */
+.top-nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #5b57e6;
+    color: white;
+    transition: background 0.3s;
+}
+
+.top-nav a:hover {
+    background-color: #4845c3;
+}

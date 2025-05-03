@@ -1,0 +1,19 @@
+[
+    {
+      "titulo": "Desenvolvedor Python",
+      "empresa": "DevCorp",
+      "localizacao": "Remoto",
+      "tipo": "Remoto",
+      "area": "TI",
+      "link": "https://exemplo.com/vaga/python"
+    },
+    {
+      "titulo": "Designer Gráfico",
+      "empresa": "Criativa",
+      "localizacao": "São Paulo - SP",
+      "tipo": "Presencial",
+      "area": "Design",
+      "link": "https://exemplo.com/vaga/design"
+    }
+  ]
+  
